@@ -1,4 +1,8 @@
-Задача 41: Пользователь вводит с клавиатуры числа через запятую. Посчитайте, сколько чисел больше 0 ввёл пользователь. 0, 7, 8, -2, -2 -> 2 -1, -7, 567, 89, 223-> 3
+// See https://aka.ms/new-console-template for more information
+// Задача 41: Пользователь вводит с клавиатуры M чисел. Посчитайте, сколько чисел больше 0 ввёл пользователь
+// 0, 7, 8, -2, -2 -> 2
+// 1, -7, 567, 89, 223-> 3 (В примере ошибка!!! Решение должно быть 4)
+
 Console.Write("Введите числа через запятую: ");
 int[] numbers = StringToNum(Console.ReadLine());
 PrintArray(numbers);
@@ -11,7 +15,7 @@ for (int i = 0; i < numbers.Length; i++)
     }
 }
 Console.WriteLine();
-Console.WriteLine($"количество значений больше 0 = {sum}");
+Console.WriteLine($"Количество чисел больше 0 : {sum}");
 
 
 int[] StringToNum(string input)
